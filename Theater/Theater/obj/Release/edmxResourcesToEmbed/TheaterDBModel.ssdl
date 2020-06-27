@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище TheaterDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Genres">
+    <Key>
+      <PropertyRef Name="GenreId" />
+    </Key>
+    <Property Name="GenreId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GenreName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParentalGuidances">
+    <Key>
+      <PropertyRef Name="ParentalGuidanceId" />
+    </Key>
+    <Property Name="ParentalGuidanceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentalGuidanceValue" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Performances">
+    <Key>
+      <PropertyRef Name="PerformanceId" />
+    </Key>
+    <Property Name="PerformanceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlayId" Type="int" Nullable="false" />
+    <Property Name="PerformanceDate" Type="date" Nullable="false" />
+    <Property Name="PerformanceTime" Type="datetime" Nullable="false" />
+    <Property Name="PerformanceLocation" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PerformancePrice" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PerformanceDresser" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PerformanceDirector" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PerformanceArtDirector" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Plays">
+    <Key>
+      <PropertyRef Name="PlayId" />
+    </Key>
+    <Property Name="PlayId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GenreId" Type="int" Nullable="false" />
+    <Property Name="ParentalGuidanceId" Type="int" Nullable="false" />
+    <Property Name="PlayName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PlayAuthor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PlayPremiere" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Professions">
+    <Key>
+      <PropertyRef Name="ProfessionId" />
+    </Key>
+    <Property Name="ProfessionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProfessionName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="PerformanceId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProfessionId" Type="int" Nullable="false" />
+    <Property Name="UserLogin" Type="nvarchar(max)" />
+    <Property Name="UserPassword" Type="nvarchar(max)" />
+    <Property Name="UserFIO" Type="nvarchar(max)" />
+    <Property Name="UserDOB" Type="date" />
+    <Property Name="UserSex" Type="nvarchar(max)" />
+    <Property Name="UserHight" Type="nvarchar(max)" />
+    <Property Name="UserExperience" Type="nvarchar(max)" />
+    <Property Name="UserSalary" Type="nvarchar(max)" />
+    <Property Name="UserСhildrens" Type="int" />
+    <Property Name="UserAwards" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_Performances_Plays">
+    <End Role="Plays" Type="Self.Plays" Multiplicity="1" />
+    <End Role="Performances" Type="Self.Performances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plays">
+        <PropertyRef Name="PlayId" />
+      </Principal>
+      <Dependent Role="Performances">
+        <PropertyRef Name="PlayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Plays_Genres">
+    <End Role="Genres" Type="Self.Genres" Multiplicity="1" />
+    <End Role="Plays" Type="Self.Plays" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genres">
+        <PropertyRef Name="GenreId" />
+      </Principal>
+      <Dependent Role="Plays">
+        <PropertyRef Name="GenreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Plays_ParentalGuidances">
+    <End Role="ParentalGuidances" Type="Self.ParentalGuidances" Multiplicity="1" />
+    <End Role="Plays" Type="Self.Plays" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParentalGuidances">
+        <PropertyRef Name="ParentalGuidanceId" />
+      </Principal>
+      <Dependent Role="Plays">
+        <PropertyRef Name="ParentalGuidanceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Roles_Performances">
+    <End Role="Performances" Type="Self.Performances" Multiplicity="1" />
+    <End Role="Roles" Type="Self.Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Performances">
+        <PropertyRef Name="PerformanceId" />
+      </Principal>
+      <Dependent Role="Roles">
+        <PropertyRef Name="PerformanceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Roles_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Roles" Type="Self.Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Roles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Professions">
+    <End Role="Professions" Type="Self.Professions" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Professions">
+        <PropertyRef Name="ProfessionId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="ProfessionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище TheaterDBModelContainer">
+    <EntitySet Name="Genres" EntityType="Self.Genres" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParentalGuidances" EntityType="Self.ParentalGuidances" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Performances" EntityType="Self.Performances" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Plays" EntityType="Self.Plays" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Professions" EntityType="Self.Professions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Performances_Plays" Association="Self.FK_Performances_Plays">
+      <End Role="Plays" EntitySet="Plays" />
+      <End Role="Performances" EntitySet="Performances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Plays_Genres" Association="Self.FK_Plays_Genres">
+      <End Role="Genres" EntitySet="Genres" />
+      <End Role="Plays" EntitySet="Plays" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Plays_ParentalGuidances" Association="Self.FK_Plays_ParentalGuidances">
+      <End Role="ParentalGuidances" EntitySet="ParentalGuidances" />
+      <End Role="Plays" EntitySet="Plays" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Roles_Performances" Association="Self.FK_Roles_Performances">
+      <End Role="Performances" EntitySet="Performances" />
+      <End Role="Roles" EntitySet="Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Roles_Users" Association="Self.FK_Roles_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Roles" EntitySet="Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Professions" Association="Self.FK_Users_Professions">
+      <End Role="Professions" EntitySet="Professions" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище TheaterDBModelContainer" CdmEntityContainer="TheaterDBContext">
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="TheaterDBModel.Genres">
+        <MappingFragment StoreEntitySet="Genres">
+          <ScalarProperty Name="GenreId" ColumnName="GenreId" />
+          <ScalarProperty Name="GenreName" ColumnName="GenreName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParentalGuidances">
+      <EntityTypeMapping TypeName="TheaterDBModel.ParentalGuidances">
+        <MappingFragment StoreEntitySet="ParentalGuidances">
+          <ScalarProperty Name="ParentalGuidanceId" ColumnName="ParentalGuidanceId" />
+          <ScalarProperty Name="ParentalGuidanceValue" ColumnName="ParentalGuidanceValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Performances">
+      <EntityTypeMapping TypeName="TheaterDBModel.Performances">
+        <MappingFragment StoreEntitySet="Performances">
+          <ScalarProperty Name="PerformanceId" ColumnName="PerformanceId" />
+          <ScalarProperty Name="PlayId" ColumnName="PlayId" />
+          <ScalarProperty Name="PerformanceDate" ColumnName="PerformanceDate" />
+          <ScalarProperty Name="PerformanceTime" ColumnName="PerformanceTime" />
+          <ScalarProperty Name="PerformanceLocation" ColumnName="PerformanceLocation" />
+          <ScalarProperty Name="PerformancePrice" ColumnName="PerformancePrice" />
+          <ScalarProperty Name="PerformanceDresser" ColumnName="PerformanceDresser" />
+          <ScalarProperty Name="PerformanceDirector" ColumnName="PerformanceDirector" />
+          <ScalarProperty Name="PerformanceArtDirector" ColumnName="PerformanceArtDirector" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plays">
+      <EntityTypeMapping TypeName="TheaterDBModel.Plays">
+        <MappingFragment StoreEntitySet="Plays">
+          <ScalarProperty Name="PlayId" ColumnName="PlayId" />
+          <ScalarProperty Name="GenreId" ColumnName="GenreId" />
+          <ScalarProperty Name="ParentalGuidanceId" ColumnName="ParentalGuidanceId" />
+          <ScalarProperty Name="PlayName" ColumnName="PlayName" />
+          <ScalarProperty Name="PlayAuthor" ColumnName="PlayAuthor" />
+          <ScalarProperty Name="PlayPremiere" ColumnName="PlayPremiere" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Professions">
+      <EntityTypeMapping TypeName="TheaterDBModel.Professions">
+        <MappingFragment StoreEntitySet="Professions">
+          <ScalarProperty Name="ProfessionId" ColumnName="ProfessionId" />
+          <ScalarProperty Name="ProfessionName" ColumnName="ProfessionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="TheaterDBModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PerformanceId" ColumnName="PerformanceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="TheaterDBModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProfessionId" ColumnName="ProfessionId" />
+          <ScalarProperty Name="UserLogin" ColumnName="UserLogin" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserFIO" ColumnName="UserFIO" />
+          <ScalarProperty Name="UserDOB" ColumnName="UserDOB" />
+          <ScalarProperty Name="UserSex" ColumnName="UserSex" />
+          <ScalarProperty Name="UserHight" ColumnName="UserHight" />
+          <ScalarProperty Name="UserExperience" ColumnName="UserExperience" />
+          <ScalarProperty Name="UserSalary" ColumnName="UserSalary" />
+          <ScalarProperty Name="UserСhildrens" ColumnName="UserСhildrens" />
+          <ScalarProperty Name="UserAwards" ColumnName="UserAwards" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

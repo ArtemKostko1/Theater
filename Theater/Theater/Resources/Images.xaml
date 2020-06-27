@@ -1,0 +1,9 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Theater.Resources">
+
+    <BitmapImage x:Key="AuthorizationBackground" UriSource="../Images/TheaterCurtain.jpg" />
+    <BitmapImage x:Key="MainPageBackground" UriSource="../Images/MainTheaterCurtain.jpg" />
+
+</ResourceDictionary>

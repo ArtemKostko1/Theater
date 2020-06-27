@@ -1,0 +1,116 @@
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\Theater.exe.config
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\Theater.exe
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\Theater.pdb
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater.csprojAssemblyReference.cache
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\MainWindow.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\App.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater_MarkupCompile.cache
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater_MarkupCompile.lref
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\MainWindow.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater.g.resources
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater.Properties.Resources.resources
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater.csproj.GenerateResource.cache
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater.csproj.CoreCompileInputs.cache
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater.exe
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater.pdb
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\Authorization.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\Authorization.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\App.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Resources\Images.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Resources\ButtonStyle.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\MainPage.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\MainPage.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\MaterialDesignColors.dll
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\MaterialDesignColors.pdb
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Resources\ItemsStyle.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater.csproj.CopyComplete
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\UserProfile.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\UserProfile.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\NewUser.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\NewUser.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PerformanceInfo.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PerformanceInfo.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\NewPerformance.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\NewPerformance.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\ClearPage.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\ClearPage.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\NewPlay.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PlayInfo.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\NewPlay.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PlayInfo.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\EntityFramework.dll
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\EntityFramework.SqlServer.dll
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\EntityFramework.xml
+D:\College\РПО\Итоговая программа\Theater\Theater\bin\Debug\EntityFramework.SqlServer.xml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\UsersList.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Theater_Content.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\UsersList.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PlaysList.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PlaysList.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PerformancesList.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PerformancesList.baml
+D:\College\РПО\Theater\Theater\bin\Debug\Theater.exe.config
+D:\College\РПО\Theater\Theater\bin\Debug\Theater.exe
+D:\College\РПО\Theater\Theater\bin\Debug\Theater.pdb
+D:\College\РПО\Theater\Theater\bin\Debug\EntityFramework.dll
+D:\College\РПО\Theater\Theater\bin\Debug\EntityFramework.SqlServer.dll
+D:\College\РПО\Theater\Theater\bin\Debug\MaterialDesignColors.dll
+D:\College\РПО\Theater\Theater\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\College\РПО\Theater\Theater\bin\Debug\EntityFramework.xml
+D:\College\РПО\Theater\Theater\bin\Debug\EntityFramework.SqlServer.xml
+D:\College\РПО\Theater\Theater\bin\Debug\MaterialDesignColors.pdb
+D:\College\РПО\Theater\Theater\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\College\РПО\Theater\Theater\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\College\РПО\Theater\Theater\obj\Debug\Theater.csprojAssemblyReference.cache
+D:\College\РПО\Theater\Theater\obj\Debug\Resources\ButtonStyle.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Resources\ItemsStyle.baml
+D:\College\РПО\Theater\Theater\obj\Debug\MainWindow.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\ClearPage.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\NewPlay.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\Authorization.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\MainPage.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\NewUser.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\PlayInfo.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\NewPerformance.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\PerformancesList.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\PerformanceInfo.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\UserProfile.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\UsersList.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\PlaysList.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\App.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Theater_Content.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\College\РПО\Theater\Theater\obj\Debug\Theater_MarkupCompile.cache
+D:\College\РПО\Theater\Theater\obj\Debug\Theater_MarkupCompile.lref
+D:\College\РПО\Theater\Theater\obj\Debug\App.baml
+D:\College\РПО\Theater\Theater\obj\Debug\MainWindow.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\ClearPage.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\NewPlay.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\Authorization.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\MainPage.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\NewUser.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\PlayInfo.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\NewPerformance.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\PerformancesList.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\PerformanceInfo.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\UserProfile.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\UsersList.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Pages\PlaysList.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Resources\Images.baml
+D:\College\РПО\Theater\Theater\obj\Debug\Theater.g.resources
+D:\College\РПО\Theater\Theater\obj\Debug\Theater.Properties.Resources.resources
+D:\College\РПО\Theater\Theater\obj\Debug\Theater.csproj.GenerateResource.cache
+D:\College\РПО\Theater\Theater\obj\Debug\Theater.csproj.CoreCompileInputs.cache
+D:\College\РПО\Theater\Theater\obj\Debug\Theater.csproj.CopyComplete
+D:\College\РПО\Theater\Theater\obj\Debug\Theater.exe
+D:\College\РПО\Theater\Theater\obj\Debug\Theater.pdb
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PerformanceEditing.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PlayEditing.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\UserEditing.g.cs
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PerformanceEditing.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\PlayEditing.baml
+D:\College\РПО\Итоговая программа\Theater\Theater\obj\Debug\Pages\UserEditing.baml

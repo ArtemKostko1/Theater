@@ -1,0 +1,366 @@
+﻿<Page
+    x:Class="Theater.Pages.NewUser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Theater.Pages"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="NewUser"
+    d:DesignHeight="490"
+    d:DesignWidth="680"
+    mc:Ignorable="d"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+
+        <Grid
+            Grid.Row="0"
+            Width="40"
+            Height="40"
+            HorizontalAlignment="Left">
+
+            <Border Background="#FF3C3C3C" CornerRadius="10" />
+
+            <Button
+                x:Name="ButtonBackFromNewUserPage"
+                Width="40"
+                Height="40"
+                Padding="0"
+                Background="{x:Null}"
+                BorderBrush="{x:Null}"
+                BorderThickness="0"
+                Click="ButtonBackFromNewUserPage_Click">
+
+                <materialDesign:PackIcon
+                    Width="40"
+                    Height="25"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="#FFFF"
+                    Kind="ArrowBack" />
+            </Button>
+        </Grid>
+
+        <TextBlock
+            Grid.Row="0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontFamily="Arial Bold"
+            FontSize="34"
+            Foreground="#FF6015FF"
+            Text="Новый пользователь" />
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="1.5*" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Separator
+                Grid.Row="1"
+                Grid.Column="0"
+                Width="550"
+                Height="1.5"
+                Margin="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Background="#FF6015FF"
+                Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+
+            <Separator
+                Grid.Row="3"
+                Grid.Column="0"
+                Width="550"
+                Height="1.5"
+                Margin="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Background="#FF6015FF"
+                Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock
+                        Margin="0,0,15,0"
+                        FontFamily="Arial Bold"
+                        FontSize="22"
+                        Foreground="#FF6015FF"
+                        TextAlignment="Left">
+                        Ф.И.О.
+                    </TextBlock>
+                    <TextBox
+                        x:Name="TextBoxNewUserFIO"
+                        Width="325"
+                        Height="30"
+                        HorizontalAlignment="Left"
+                        FontFamily="Arial"
+                        FontSize="18" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock
+                        Margin="15,0,0,0"
+                        FontFamily="Arial Bold"
+                        FontSize="22"
+                        Foreground="#FF6015FF"
+                        TextAlignment="Left">
+                        Профессия
+                    </TextBlock>
+                    <ComboBox
+                        x:Name="ComboBoxNewUserProfession"
+                        Width="325"
+                        Height="25"
+                        Padding="0"
+                        HorizontalAlignment="Right"
+                        Background="Transparent"
+                        FontSize="16">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock
+                                    FontFamily="Arial"
+                                    FontSize="16"
+                                    Text="{Binding Path=ProfessionName}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel VerticalAlignment="Center">
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            Grid.Column="0"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial Bold"
+                            FontSize="22"
+                            Foreground="#FF6015FF"
+                            TextAlignment="Left">
+                            Дата рождения
+                        </TextBlock>
+                        <TextBox
+                            x:Name="TextBoxNewUserDOB"
+                            Grid.Column="1"
+                            Width="155"
+                            Height="30"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial"
+                            FontSize="18"
+                            TextAlignment="Center" />
+                    </Grid>
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            Grid.Column="0"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial Bold"
+                            FontSize="22"
+                            Foreground="#FF6015FF"
+                            TextAlignment="Left">
+                            Пол
+                        </TextBlock>
+                        <TextBox
+                            x:Name="TextBoxNewUserSex"
+                            Grid.Column="1"
+                            Width="155"
+                            Height="30"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial"
+                            FontSize="18"
+                            TextAlignment="Center" />
+                    </Grid>
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            Grid.Column="0"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial Bold"
+                            FontSize="22"
+                            Foreground="#FF6015FF"
+                            TextAlignment="Left">
+                            Рост
+                        </TextBlock>
+                        <TextBox
+                            x:Name="TextBoxNewUserHight"
+                            Grid.Column="1"
+                            Width="155"
+                            Height="30"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial"
+                            FontSize="18"
+                            TextAlignment="Center" />
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            Grid.Column="0"
+                            Margin="15,0,0,0"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial Bold"
+                            FontSize="22"
+                            Foreground="#FF6015FF"
+                            TextAlignment="Left">
+                            Стаж работы
+                        </TextBlock>
+                        <TextBox
+                            x:Name="TextBoxNewUserExperience"
+                            Grid.Column="1"
+                            Width="155"
+                            Height="30"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial"
+                            FontSize="20"
+                            TextAlignment="Center" />
+                    </Grid>
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            Grid.Column="0"
+                            Margin="15,0,0,0"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial Bold"
+                            FontSize="22"
+                            Foreground="#FF6015FF"
+                            TextAlignment="Left">
+                            Средняя з\п
+                        </TextBlock>
+                        <TextBox
+                            x:Name="TextBoxNewUserSalary"
+                            Grid.Column="1"
+                            Width="155"
+                            Height="30"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial"
+                            FontSize="18"
+                            TextAlignment="Center" />
+                    </Grid>
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            Grid.Column="0"
+                            Margin="15,0,0,0"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial Bold"
+                            FontSize="22"
+                            Foreground="#FF6015FF"
+                            TextAlignment="Left">
+                            Кол-во детей
+                        </TextBlock>
+                        <TextBox
+                            x:Name="TextBoxNewUserChildrens"
+                            Grid.Column="1"
+                            Width="155"
+                            Height="30"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial"
+                            FontSize="18"
+                            TextAlignment="Center" />
+                    </Grid>
+                </StackPanel>
+            </Grid>
+            <StackPanel Grid.Row="4" VerticalAlignment="Center">
+                <TextBlock
+                    FontFamily="Arial Bold"
+                    FontSize="22"
+                    Foreground="#FF6015FF"
+                    Text="Награды"
+                    TextAlignment="Left" />
+                <TextBox
+                    x:Name="TextBoxNewUserAwards"
+                    Width="680"
+                    Height="30"
+                    FontFamily="Arial"
+                    FontSize="18"
+                    TextAlignment="Left" />
+            </StackPanel>
+        </Grid>
+
+        <Grid
+            Grid.Row="2"
+            Width="150"
+            Height="40"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center">
+
+            <Button
+                x:Name="ButtonSaveNewUser"
+                Background="#FFFF4E4E"
+                Click="ButtonSaveNewUser_Click"
+                Content="Сохранить"
+                Foreground="#FFFF"
+                Style="{StaticResource ButtonCornerRadius10}" />
+        </Grid>
+
+        <TextBlock
+            x:Name="TextBlockNewUserError"
+            Grid.Row="2"
+            Width="350"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontFamily="Arial"
+            FontSize="14"
+            Foreground="Red"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+        <TextBlock
+            x:Name="TextBlockUserEditOk"
+            Grid.Row="2"
+            Width="350"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontFamily="Arial"
+            FontSize="14"
+            Foreground="#FF5DFF00"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+    </Grid>
+</Page>
